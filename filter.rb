@@ -27,6 +27,11 @@ github_filterset = GmailBritta.filterset(author: AUTHOR, me: GITHUB_ME_EMAILS) d
     has [GITHUB_NOTIFICATION, { and: 'cc:review_requested@noreply.github.com' }]
     label "@GH/Review"
   end
+
+  filter do
+    has [GITHUB_NOTIFICATION, { and: 'cc:team_mention@noreply.github.com' }]
+    label "@GH/team"
+  end.archive_unless_directed
 end
 
 File.write('gmail_github_filters.xml', github_filterset.generate)

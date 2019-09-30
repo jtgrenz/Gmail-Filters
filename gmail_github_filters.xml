@@ -2,7 +2,7 @@
 <feed xmlns:apps='http://schemas.google.com/apps/2006' xmlns='http://www.w3.org/2005/Atom'>
   <title>Mail Filters</title>
   <id>tag:mail.google.com,2008:filters:</id>
-  <updated>2019-09-30T19:08:45Z</updated>
+  <updated>2019-09-30T19:22:12Z</updated>
   <author>
     <name>Jon G</name>
     <email>jon.g@shopify.com</email>
@@ -44,5 +44,20 @@
     <content></content>
     <apps:property name="label" value="@GH/Review"></apps:property>
     <apps:property name="hasTheWord" value="from:notifications@github.com cc:review_requested@noreply.github.com"></apps:property>
+  </entry>
+  <entry>
+    <category term="filter"></category>
+    <title>Mail Filter</title>
+    <content></content>
+    <apps:property name="label" value="@GH/team"></apps:property>
+    <apps:property name="hasTheWord" value="from:notifications@github.com cc:team_mention@noreply.github.com"></apps:property>
+  </entry>
+  <entry>
+    <category term="filter"></category>
+    <title>Mail Filter</title>
+    <content></content>
+    <apps:property name="shouldArchive" value="true"></apps:property>
+    <apps:property name="hasTheWord" value="from:notifications@github.com cc:team_mention@noreply.github.com"></apps:property>
+    <apps:property name="doesNotHaveTheWord" value="(to:mention@noreply.github.com OR to:assign@noreply.github.com OR to:author@noreply.github.com)"></apps:property>
   </entry>
 </feed>
