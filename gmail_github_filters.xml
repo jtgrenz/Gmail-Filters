@@ -2,7 +2,7 @@
 <feed xmlns:apps='http://schemas.google.com/apps/2006' xmlns='http://www.w3.org/2005/Atom'>
   <title>Mail Filters</title>
   <id>tag:mail.google.com,2008:filters:</id>
-  <updated>2019-09-30T19:22:12Z</updated>
+  <updated>2019-11-12T16:33:24Z</updated>
   <author>
     <name>Jon G</name>
     <email>jon.g@shopify.com</email>
@@ -34,9 +34,33 @@
     <category term="filter"></category>
     <title>Mail Filter</title>
     <content></content>
+    <apps:property name="label" value="@GH/@OSE"></apps:property>
+    <apps:property name="hasTheWord" value="from:notifications@github.com @Shopify/online-store-editor"></apps:property>
+    <apps:property name="doesNotHaveTheWord" value="((cc:mention@noreply.github.com OR cc:assign@noreply.github.com OR cc:author@noreply.github.com) OR cc:manual@noreply.github.com OR @Shopify/Api-Patterns-Team)"></apps:property>
+  </entry>
+  <entry>
+    <category term="filter"></category>
+    <title>Mail Filter</title>
+    <content></content>
+    <apps:property name="label" value="@GH/@OSE-Backend"></apps:property>
+    <apps:property name="hasTheWord" value="from:notifications@github.com @Shopify/online-store-editor-backend"></apps:property>
+    <apps:property name="doesNotHaveTheWord" value="((cc:mention@noreply.github.com OR cc:assign@noreply.github.com OR cc:author@noreply.github.com) OR cc:manual@noreply.github.com OR @Shopify/Api-Patterns-Team OR @Shopify/online-store-editor)"></apps:property>
+  </entry>
+  <entry>
+    <category term="filter"></category>
+    <title>Mail Filter</title>
+    <content></content>
+    <apps:property name="label" value="@GH/@OnlineStore"></apps:property>
+    <apps:property name="hasTheWord" value="from:notifications@github.com @Shopify/online-store"></apps:property>
+    <apps:property name="doesNotHaveTheWord" value="((cc:mention@noreply.github.com OR cc:assign@noreply.github.com OR cc:author@noreply.github.com) OR cc:manual@noreply.github.com OR @Shopify/Api-Patterns-Team OR @Shopify/online-store-editor OR @Shopify/online-store-editor-backend)"></apps:property>
+  </entry>
+  <entry>
+    <category term="filter"></category>
+    <title>Mail Filter</title>
+    <content></content>
     <apps:property name="shouldArchive" value="true"></apps:property>
-    <apps:property name="hasTheWord" value="from:notifications@github.com @Shopify/Api-Patterns-Team"></apps:property>
-    <apps:property name="doesNotHaveTheWord" value="(to:mention@noreply.github.com OR to:assign@noreply.github.com OR to:author@noreply.github.com) ((cc:mention@noreply.github.com OR cc:assign@noreply.github.com OR cc:author@noreply.github.com) OR cc:manual@noreply.github.com)"></apps:property>
+    <apps:property name="hasTheWord" value="from:notifications@github.com @Shopify/online-store"></apps:property>
+    <apps:property name="doesNotHaveTheWord" value="(to:mention@noreply.github.com OR to:assign@noreply.github.com OR to:author@noreply.github.com) ((cc:mention@noreply.github.com OR cc:assign@noreply.github.com OR cc:author@noreply.github.com) OR cc:manual@noreply.github.com OR @Shopify/Api-Patterns-Team OR @Shopify/online-store-editor OR @Shopify/online-store-editor-backend)"></apps:property>
   </entry>
   <entry>
     <category term="filter"></category>

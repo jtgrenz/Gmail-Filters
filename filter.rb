@@ -21,6 +21,15 @@ github_filterset = GmailBritta.filterset(author: AUTHOR, me: GITHUB_ME_EMAILS) d
   end.otherwise do
     has %W(#{GITHUB_NOTIFICATION} @Shopify/Api-Patterns-Team)
     label "@GH/@Api-Patterns-Team"
+  end.otherwise do
+    has %W(#{GITHUB_NOTIFICATION} @Shopify/online-store-editor)
+    label "@GH/@OSE"
+  end.otherwise do
+    has %W(#{GITHUB_NOTIFICATION} @Shopify/online-store-editor-backend)
+    label "@GH/@OSE-Backend"
+  end.otherwise do
+    has %W(#{GITHUB_NOTIFICATION} @Shopify/online-store)
+    label "@GH/@OnlineStore"
   end.archive_unless_directed
 
   filter do
